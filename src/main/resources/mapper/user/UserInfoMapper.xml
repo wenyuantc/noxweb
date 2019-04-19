@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edoai.framework.noxweb.modules.user.mapper.UserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.edoai.framework.noxweb.modules.user.entity.UserInfo">
+    <result column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="nick_name" property="nickName" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="platform" property="platform" />
+        <result column="avatar" property="avatar" />
+        <result column="note" property="note" />
+        <result column="b1" property="b1" />
+        <result column="b2" property="b2" />
+        <result column="b3" property="b3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        username, password, nick_name, phone, email, platform, avatar, note, b1, b2, b3
+    </sql>
+
+</mapper>
